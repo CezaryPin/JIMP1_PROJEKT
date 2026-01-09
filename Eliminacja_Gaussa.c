@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 void eliminacjaGaussa(double **macierz, int wiersze, int kolumny) {
     int n = wiersze;
     
@@ -36,4 +40,5 @@ void odwrocMacierz(double **macierz, int wiersze) {
         macierz[i] = macierz [wiersze - 1 - i];
         macierz [wiersze - 1 - i] = temp;
     }
+
 }
